@@ -1,0 +1,23 @@
+string preToPost(string s) {
+    // Write Your Code Here
+    int n=s.length();
+    reverse(s.begin(),s.end());
+    stack<string> p;
+    for(int i=0;i<n;i++){
+        if(s[i]!='+' && s[i]!='-' && s[i]!='/' && s[i]!='*' && s[i]!='^'){
+			string s3="";
+			s3+=s[i];
+			p.push(s3);
+		}
+        else{
+            string s1,s2;
+            s1=p.top();
+            p.pop();
+            s2=p.top();
+            p.pop();
+            s1=s1+s2+s[i];
+            p.push(s1);
+        }
+    }
+    return p.top();
+}
