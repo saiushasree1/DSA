@@ -1,1 +1,2 @@
 Question1: LongestValidParenthesis: logic if close==open then ans=2*open else if open<close in valid reinitialise them to zero run from 0-->n and n-->0 to ensure everything is perfectly covered. in n-->0 it is invalid if open>close.
+Question2: Long Multiplication: Two numbers of equal length given can swap digits of two numbers at same value such that output multiplication is greater.so, logic is make difference between them smaller (s/2-a)*(s/2+a) a^2 should be smaller.
