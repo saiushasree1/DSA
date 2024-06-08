@@ -3,3 +3,4 @@ Question2: Long Multiplication: Two numbers of equal length given can swap digit
 Question 3: To get right most bit which is 1 we can do (n&(n-1))^n.
 Question 4: Revise prfeix sum.
 Question 5: While using erase function take care of iterator position.
+Question 6: x%k==y%k then (x-y)%k==0.
