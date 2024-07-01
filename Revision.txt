@@ -6,3 +6,4 @@ Question 5: While using erase function take care of iterator position.
 Question 6: x%k==y%k then (x-y)%k==0.
 Question 7: if(n==0) return 0;int x=lpt(n);return x*(1<<(x-1))+(n-(1<<(x)))+ 1 + countSetBits(n-(1<<(x))); countSetBits from 1 to n.
 Question 8: Gfg contest question never blindly go for prefix sum some times lower_bound can help you from tle :) here there were n children you have distribute chocolates then after you have been queries with some integers now give number children with minimum queries[i] chocolates so sort the chocolate array and find lower_bound(queries[i]) then push(n+1-lb);
+Question 9: In a Binary Tree LeftChild=2*Currindex+1,RightChild=2*Currindex+2;
