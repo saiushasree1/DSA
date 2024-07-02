@@ -8,3 +8,6 @@ Question 7: if(n==0) return 0;int x=lpt(n);return x*(1<<(x-1))+(n-(1<<(x)))+ 1 +
 Question 8: Gfg contest question never blindly go for prefix sum some times lower_bound can help you from tle :) here there were n children you have distribute chocolates then after you have been queries with some integers now give number children with minimum queries[i] chocolates so sort the chocolate array and find lower_bound(queries[i]) then push(n+1-lb);
 Question 9: In a Binary Tree LeftChild=2*Currindex+1,RightChild=2*Currindex+2;
 Question 10: Next Greater Element Code Time Complexity is O(2n),Largest Aread Histogram: area=hegiht*(rightsmallest-leftsmallest+1);
+Question 11: Use Largest Area Histogram for Largest Rectangle Question.Calculate histogram height for every row and for this calculate Largest Area Histogram.
+Question 12: For largest Square Calculate that particular block is right-top for how many blocks.then find area.
+Question 13: Word Ladder Length---> first create a set with all words,queue initialize it with beginword and erase all elements which enter the queue.Check if q.front==endword return ladder else check for next connecting word 0;word.length() then 0;26 q.push(word) dict.erase(word). if stack is emptied return 0. :-) 
