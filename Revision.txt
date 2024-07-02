@@ -11,3 +11,4 @@ Question 10: Next Greater Element Code Time Complexity is O(2n),Largest Aread Hi
 Question 11: Use Largest Area Histogram for Largest Rectangle Question.Calculate histogram height for every row and for this calculate Largest Area Histogram.
 Question 12: For largest Square Calculate that particular block is right-top for how many blocks.then find area.
 Question 13: Word Ladder Length---> first create a set with all words,queue initialize it with beginword and erase all elements which enter the queue.Check if q.front==endword return ladder else check for next connecting word 0;word.length() then 0;26 q.push(word) dict.erase(word). if stack is emptied return 0. :-) 
+Question 14: Bipartite: To see All nodes are coloured such that no adjacent nodes are not having same colour.vect(n,-1) q.push(0) vect[0]=0;if(vect[adj]==-1) q.push(adj); vect[adj]=!vect[0]; else if(vect[adj]==vect[0]) return fasle;
