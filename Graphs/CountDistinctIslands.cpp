@@ -40,4 +40,5 @@ int countDistinctIslands(vector<vector<int>>& g) {
         return s.size();
         
     }
+
 https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1
