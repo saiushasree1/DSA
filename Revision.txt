@@ -14,3 +14,6 @@ Question 13: Word Ladder Length---> first create a set with all words,queue init
 Question 14: Bipartite: To see All nodes are coloured such that no adjacent nodes are not having same colour.vect(n,-1) q.push(0) vect[0]=0;if(vect[adj]==-1) q.push(adj); vect[adj]=!vect[0]; else if(vect[adj]==vect[0]) return fasle;
 Question 15: Detect Cycle in A Directed Graph --> will have vis array and pathvis array pathvis is to know if node is touched in current path or not if touched then return true; at the end we should change the status of the pathvis[x]=0.
 Question 16: Kahn's Algorithm for Topo Sort.vector with number of incoming nodes.Start queue with A node with do not have any incoming node and traverse it's adjlist then v[j]--; v[j] becomes 0 push it into queue.It is Only Applicable to Directed Acyclic Graph.
+Question 17: In A DAG we apply toposort and then calculate shortest lengths cause in toposort on a reaching a vertex v we can say that all paths which take us to v are calculated.And tc is v+e where dijkstra takes (v+e)log(n) and cyclic graphs can't be done with toposort.
+Question 18: Dijkstra Algorithm --> priority queue with {0,src} then traverse its adjlist then calculate shortest path push {shortpath,node} until queue gets empty.
+
