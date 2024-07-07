@@ -16,4 +16,4 @@ Question 15: Detect Cycle in A Directed Graph --> will have vis array and pathvi
 Question 16: Kahn's Algorithm for Topo Sort.vector with number of incoming nodes.Start queue with A node with do not have any incoming node and traverse it's adjlist then v[j]--; v[j] becomes 0 push it into queue.It is Only Applicable to Directed Acyclic Graph.
 Question 17: In A DAG we apply toposort and then calculate shortest lengths cause in toposort on a reaching a vertex v we can say that all paths which take us to v are calculated.And tc is v+e where dijkstra takes (v+e)log(n) and cyclic graphs can't be done with toposort.
 Question 18: Dijkstra Algorithm --> priority queue with {0,src} then traverse its adjlist then calculate shortest path push {shortpath,node} until queue gets empty.
-
+Question 19: Minimum Multiplications To Reach End . We are given a start and an end now we consider a total of 100000 nodes and initialize with INT_MAX q.push({0,start}); then multiply with all array elements and time[x]=min; if(x==end) return time[x];
