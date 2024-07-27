@@ -1,1 +1,10 @@
-
+Question 1: Union Of Two Sorted Arrays : 
+Brute Force: insert both arrays into the set and insert all elements from set to result array and return result.
+Time  : O((n+m)log(n+m));
+Space : O(n+m);
+Optimal    : 1.Use two pointers to traverse both the arrays simultaneously.
+            2.Add smaller element to the array move the corresponding pointer.
+            3.If both are equal move two pointers.
+            4.Traverse total array to ensure all elements are added into the union.
+Time  : O(n+m);
+Space : O(n+m);
