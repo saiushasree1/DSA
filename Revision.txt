@@ -26,4 +26,5 @@ Question 25: Josephus Problem --> kill kth person in a circle if(n==1) return 1;
 Question 26: Reverse Substrings Between Each Pair Of Parenthesis --> Warmhole Teleportation Technique :-> create an array to store opposite parenthesis this can be done using a stack and then have a dir=-1||1; variable which tells which side to be traversed if you touch a '(' || ')' move to opposite parenthesis and reverse the dir.
 Question 27: Combination Sum II--> https://leetcode.com/problems/combination-sum-ii/
 Question 28: Longest Alternating Subsequence --> me=1,mi=1 if(arr[i]>arr[i-1]) me=mi+1;else if(arr[i]<arr[i-1]) mi=me+1;
-Question 29:Count Of Smaller Numbers After Self --> Use Merge Sort where you will be sorting array in decreasing order.
+Question 29: Count Of Smaller Numbers After Self --> Use Merge Sort where you will be sorting array in decreasing order.
+Question 30: Moore Vooting Algorithm --> to find if an element occurs n/2 times or not take el=0,c=0; if(c==0) el=nums[i]; if(el==nums[i]) c++; else c--; lastly verify if el occurs n/2 times if not then there is no element which ocuurs >n/2 times.
