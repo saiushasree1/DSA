@@ -1,3 +1,12 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2:  : 
+Brute Force: 
+Time  :
+Space : 
+Optimal    :
+Time  : 
+Space : 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Question 1: Union Of Two Sorted Arrays : 
 Brute Force: insert both arrays into the set and insert all elements from set to result array and return result.
 Time  : O((n+m)log(n+m));
@@ -8,3 +17,16 @@ Optimal    : 1.Use two pointers to traverse both the arrays simultaneously.
             4.Traverse total array to ensure all elements are added into the union.
 Time  : O(n+m);
 Space : O(n+m);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2: Longest Subarray with sum k : Here you think of two pointer approach but it does not work beacuse of negative numbers.
+Brute Force: 1.Iterate through all possible sub-arrays using two nested loops.
+                       2.Calculate the sum of elements for each sub-array.
+                       3.Track the maximum length of sub-arrays whose sum equals k.
+Time  : O(n^3);
+Space : O(1);
+Optimal    : 1.Use a hashmap (unordered_map) to store the cumulative sum at each index.
+             2.Iterate through the array, updating the cumulative sum.
+             3.Check if the cumulative sum equals k orif there is a previous cumulative sum that when subtracted from the                   cumulative sum equals 𝑘.
+             4.Track the maximum length of sub-arrays whose sum equals k.
+Time  : O(n);
+Space : O(n);
