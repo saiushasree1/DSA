@@ -8,8 +8,8 @@ File System is simpler, suitable for file storage but lacks structured data mana
 
 Use DBMS for structured data, relationships, and multiple users.
 Use File System for simple file storage with no complex data handling needs.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.Explain the integrity problem of file system with an example:
 answer:
 The integrity problem in a file system refers to the risk of data inconsistency, corruption, or loss due to a lack of built-in mechanisms to enforce data accuracy and consistency. Unlike a DBMS, a file system does not have integrity constraints such as primary keys, foreign keys, or ACID transactions, leading to potential issues.
@@ -28,3 +28,78 @@ There is no rollback mechanism to restore the previous state.
 How DBMS Solves This?
 Transactions: DBMS ensures atomic operations using ACID properties.
 Rollback & Recovery: If a failure occurs, the database reverts to the last consistent state.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.What is a data model?
+answer:
+A data model is a way to organize and define how data is stored, structured, and related inside a database. It provides rules for arranging data logically and ensures that information is consistent and easy to retrieve.
+
+Why is a Data Model Important?
+It defines how data is stored (tables, objects, files, etc.).
+It helps in maintaining relationships between different pieces of data.
+It ensures data integrity and consistency (avoiding duplication or missing data).
+Types of Data Models (Simple Explanation)
+Hierarchical Model – Data is stored in a tree structure, like a family tree. (Example: Old banking systems, XML databases.)
+Network Model – More flexible than a tree, data can have multiple relationships (like a web). (Example: Telecom networks, complex systems.)
+Relational Model – Data is stored in tables (rows and columns), the most common model. (Example: MySQL, PostgreSQL.)
+Object-Oriented Model – Data is stored as objects, similar to programming (OOP). (Example: MongoDB, Object databases.)
+NoSQL Models – Flexible models used for big data and real-time applications (like document-based and graph-based models). (Example: MongoDB, Neo4j.)
+Example (Relational Model)
+Imagine a database for an online store:
+
+Customers Table (CustomerID, Name, Email)
+Orders Table (OrderID, CustomerID, Product)
+Here, the CustomerID links both tables, ensuring data is structured and efficient.
+Final Takeaway
+A data model is like a blueprint for organizing data in a database, ensuring that it is structured, connected, and easy to manage.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.What is DBMS Architecture?
+answer:
+DBMS (Database Management System) architecture refers to how a database system is designed, including its components, data flow, and user interaction. It defines how data is stored, processed, and accessed.
+
+Types of DBMS Architecture
+1-Tier Architecture (Single Layer)
+
+The database and application are on the same machine.
+Used for local applications (e.g., personal SQLite databases).
+Example: MS Access.
+2-Tier Architecture (Client-Server)
+
+The client (frontend) interacts with the server (database).
+Used in small applications (e.g., desktop apps connecting to a database).
+Example: Java app with MySQL.
+3-Tier Architecture (Most Common)
+
+Presentation Layer (Client/UI): User interacts with the application.
+Application Layer (Logic/Server): Processes requests and business logic.
+Database Layer (Storage): Stores and retrieves data.
+Example: Web apps (React frontend → Node.js backend → MySQL database).
+DBMS Views (Levels of Database Architecture)
+According to the ANSI/SPARC model, a DBMS has three levels (views):
+
+External View (User View)
+
+What the end-user sees (e.g., a shopping website only showing product names).
+Different users can have different views (e.g., Admin vs Customer).
+Conceptual View (Logical View)
+
+Defines the structure of the entire database (tables, relationships).
+Independent of hardware or storage details.
+Example: A table storing Customers and their Orders.
+Internal View (Physical View)
+
+Defines how data is actually stored (indexes, partitions, physical storage).
+Optimized for performance and efficiency.
+Real-World Example
+Think of a library system:
+
+External View: Users see only book titles they can borrow.
+Conceptual View: The system has tables for Books, Members, and Loans.
+Internal View: Data is stored on hard drives with indexing for faster search.
+Final Takeaway
+DBMS architecture defines how databases work (1-tier, 2-tier, 3-tier).
+DBMS views (External, Conceptual, Internal) organize data access for efficiency and security.
+This helps ensure better security, performance, and user experience in modern database systems! 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
