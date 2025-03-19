@@ -1,1 +1,30 @@
+1.dbms vs filesystem:
+answer:
+DBMS (Database Management System): Stores structured data in tables with relationships, allowing efficient querying (SQL/NoSQL), data integrity, and multi-user access with security and backup features. Examples: MySQL, PostgreSQL.
+File System: Manages unstructured data as files and folders on storage devices, with basic permissions but no built-in query support or integrity enforcement. Examples: NTFS, ext4.
+Key Differences:
+DBMS ensures data consistency, reduces redundancy, supports concurrent access, and provides better security.
+File System is simpler, suitable for file storage but lacks structured data management and efficient querying.
 
+Use DBMS for structured data, relationships, and multiple users.
+Use File System for simple file storage with no complex data handling needs.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Explain the integrity problem of file system with an example:
+answer:
+The integrity problem in a file system refers to the risk of data inconsistency, corruption, or loss due to a lack of built-in mechanisms to enforce data accuracy and consistency. Unlike a DBMS, a file system does not have integrity constraints such as primary keys, foreign keys, or ACID transactions, leading to potential issues.
+
+Example: Bank Transaction Issue in a File System
+Imagine a bank storing customer balance records in a file-based system. A transaction involves transferring $500 from Account A to Account B. The process involves two steps:
+
+Deduct $500 from Account A
+Add $500 to Account B
+Problem: Power Failure or Crash
+If the system crashes after deducting $500 from Account A but before adding it to Account B, the transaction remains incomplete.
+Account A loses $500, but Account B does not receive it, leading to data inconsistency and financial loss.
+Why This Happens?
+The file system does not enforce atomicity (all or nothing execution).
+There is no rollback mechanism to restore the previous state.
+How DBMS Solves This?
+Transactions: DBMS ensures atomic operations using ACID properties.
+Rollback & Recovery: If a failure occurs, the database reverts to the last consistent state.
