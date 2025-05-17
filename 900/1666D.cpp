@@ -40,4 +40,5 @@ int main() {
     }
     return 0;
 }
+
 https://codeforces.com/problemset/problem/1666/D
